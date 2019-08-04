@@ -1,0 +1,23 @@
+<section fxLayout="row wrap" fxLayoutAlign="center center">
+  <mat-card fxFlex="650px" fxFlex.xs="100%">
+    <mat-progress-bar mode="determinate" [value]="barValue"></mat-progress-bar>
+    <p>wizard works!</p>
+    <mat-card-content mat-align-tabs="center" class="wizard-tabs">
+      <mat-tab-group mat-strech-tabs [selectedIndex]="wizardIndex">
+        <mat-tab label="Sender Address">
+          <app-sender-address></app-sender-address>
+        </mat-tab>
+        <mat-tab label="Receiver Address">
+          <app-receiver-address></app-receiver-address>
+        </mat-tab>
+      </mat-tab-group>
+    </mat-card-content>
+
+    <mat-card-actions>
+      <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="20px">
+        <button mat-raised-button (click)="changeWizardIndex(-1)">Previous</button>
+        <button mat-raised-button (click)="changeWizardIndex(1)">Next</button>
+      </div>
+    </mat-card-actions>
+  </mat-card>
+</section>
