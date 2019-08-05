@@ -7,7 +7,7 @@ import { SenderAddressComponent } from './components/sender-address/sender-addre
 import { ReceiverAddressComponent } from './components/receiver-address/receiver-address.component';
 
 import { MatInputModule, MatButtonModule, MatSelectModule, MatIconModule, MatProgressBarModule, MatCardModule, MatTabsModule } from '@angular/material';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { WizardComponent } from './components/wizard/wizard.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -29,6 +29,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     BrowserAnimationsModule,
     FlexLayoutModule,
     FormsModule,
+    ReactiveFormsModule,
     MatInputModule,
     MatCardModule,
     MatButtonModule,
