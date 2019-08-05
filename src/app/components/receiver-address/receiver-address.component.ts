@@ -10,9 +10,20 @@ import { Router } from '@angular/router';
   styleUrls: ['./receiver-address.component.scss']
 })
 export class ReceiverAddressComponent implements OnInit {
+  receiverForm: FormGroup;
+
   @Output() receiverOutput = new EventEmitter<IReceiver>();
 
-  constructor() { }
+  constructor(fb: FormBuilder, private router: Router) {
+    this.receiverForm = fb.group({
+      name: new FormControl('', [Validators.required]),
+      street: new FormControl('', [Validators.required]),
+      city: new FormControl('', [Validators.required]),
+      state: new FormControl('', [Validators.required]),
+      zip: new FormControl('', [Validators.required])
+    });
+  }
+
 
   ngOnInit() {
   }
