@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { SenderAddressComponent } from './components/sender-address/sender-address.component';
 import { ReceiverAddressComponent } from './components/receiver-address/receiver-address.component';
 
-import { MatInputModule, MatButtonModule, MatSelectModule, MatIconModule, MatProgressBarModule, MatCardModule, MatTabsModule } from '@angular/material';
+import { MatInputModule, MatDividerModule, MatRadioModule, MatButtonModule, MatSelectModule, MatIconModule, MatProgressBarModule, MatCardModule, MatTabsModule } from '@angular/material';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { WizardComponent } from './components/wizard/wizard.component';
