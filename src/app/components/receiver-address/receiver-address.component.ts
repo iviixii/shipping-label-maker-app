@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./receiver-address.component.scss']
 })
 export class ReceiverAddressComponent implements OnInit {
+  @Output() receiverOutput = new EventEmitter<IReceiver>();
 
   constructor() { }
 
