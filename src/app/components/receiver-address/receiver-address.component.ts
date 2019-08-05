@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { IReceiver } from './../../models/shipping.model';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-receiver-address',
