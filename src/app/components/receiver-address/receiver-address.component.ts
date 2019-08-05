@@ -28,4 +28,12 @@ export class ReceiverAddressComponent implements OnInit {
   ngOnInit() {
   }
 
+  onFormSubmit(direction: string) {
+    console.log(this.receiverForm.value);
+    this.receiverOutput.emit(this.receiverForm.value);
+    if (direction === 'next') {
+      this.router.navigate(['wizard'],
+        { queryParams: { index: 1, progress: 40 } });
+    }
+  }
 }
