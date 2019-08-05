@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WizardComponent implements OnInit {
 
-  barValue: string;
+  progress: string;
   wizardIndex: number;
 
   constructor() {
