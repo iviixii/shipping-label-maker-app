@@ -11,6 +11,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { WizardComponent } from './components/wizard/wizard.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { WeightComponent } from './components/weight/weight.component';
 
 
 
@@ -20,7 +21,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     AppComponent,
     SenderAddressComponent,
     ReceiverAddressComponent,
-    WizardComponent
+    WizardComponent,
+    WeightComponent,
   ],
   imports: [
     BrowserModule,
