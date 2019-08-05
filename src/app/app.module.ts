@@ -13,6 +13,7 @@ import { WizardComponent } from './components/wizard/wizard.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { WeightComponent } from './components/weight/weight.component';
 import { ShippingComponent } from './components/shipping/shipping.component';
+import { ConfirmComponent } from './components/confirm/confirm.component';
 
 
 
@@ -25,6 +26,7 @@ import { ShippingComponent } from './components/shipping/shipping.component';
     WizardComponent,
     WeightComponent,
     ShippingComponent,
+    ConfirmComponent
   ],
   imports: [
     BrowserModule,
