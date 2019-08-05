@@ -42,7 +42,9 @@ import { ConfirmComponent } from './components/confirm/confirm.component';
     MatSelectModule,
     MatProgressBarModule,
     MatIconModule,
-    MatTabsModule
+    MatTabsModule,
+    MatRadioModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
