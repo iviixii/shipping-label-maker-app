@@ -24,7 +24,7 @@ export class ConfirmComponent implements OnInit {
       if (params['index'] === '4') {
         this.shippingCost = this.getCost(this.shippingRate, this.shippingInfo.weight, this.shippingInfo.shippingOption);
       }
-    })
+    });
   }
 
 
