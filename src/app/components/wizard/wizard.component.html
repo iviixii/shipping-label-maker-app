@@ -4,11 +4,20 @@
     <mat-progress-bar mode="determinate" [value]="progress"></mat-progress-bar>
     <mat-card-content mat-align-tabs="center" class="wizard-tabs">
       <mat-tab-group mat-strech-tabs [selectedIndex]="wizardIndex">
-        <mat-tab label="Sender Address">
-          <app-sender-address></app-sender-address>
-        </mat-tab>
         <mat-tab label="Receiver Address">
-          <app-receiver-address></app-receiver-address>
+          <app-receiver-address (receiverOutput)="updateReceiverInfo($event)"></app-receiver-address>
+        </mat-tab>
+        <mat-tab label="Sender Address">
+          <app-sender-address (senderOutput)="updateSenderInfo($event)"></app-sender-address>
+        </mat-tab>
+        <mat-tab label="Weight">
+          <app-weight (weightOutput)="updateWeightInfo($event)"></app-weight>
+        </mat-tab>
+        <mat-tab label="Shipping Option">
+          <app-shipping (shippingOutput)="updateShippingInfo($event)"></app-shipping>
+        </mat-tab>
+        <mat-tab label="Confirm">
+           <app-confirm [shippingInfo]="shippingInfo"></app-confirm>
         </mat-tab>
       </mat-tab-group>
     </mat-card-content>
