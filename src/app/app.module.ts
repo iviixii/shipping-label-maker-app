@@ -12,6 +12,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { WizardComponent } from './components/wizard/wizard.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { WeightComponent } from './components/weight/weight.component';
+import { ShippingComponent } from './components/shipping/shipping.component';
 
 
 
@@ -23,6 +24,7 @@ import { WeightComponent } from './components/weight/weight.component';
     ReceiverAddressComponent,
     WizardComponent,
     WeightComponent,
+    ShippingComponent,
   ],
   imports: [
     BrowserModule,
