@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SenderAddressComponent } from './components/sender-address/sender-address.component';
 import { ReceiverAddressComponent } from './components/receiver-address/receiver-address.component';
+import {  HttpClientModule } from '@angular/common/http';
 
 import { MatInputModule, MatDividerModule, MatRadioModule, MatButtonModule, MatSelectModule, MatIconModule, MatProgressBarModule, MatCardModule, MatTabsModule } from '@angular/material';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -34,6 +35,7 @@ import { ConfirmComponent } from './components/confirm/confirm.component';
     BrowserModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
+    HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
     MatInputModule,
