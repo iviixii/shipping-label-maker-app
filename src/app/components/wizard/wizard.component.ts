@@ -40,19 +40,19 @@ export class WizardComponent implements OnInit {
 
   updateReceiverInfo($event) {
     this.shippingInfo.to = $event;
-    console.log(this.shippingInfo);
+    console.log('STEP 1: ', this.shippingInfo);
   }
   updateSenderInfo($event) {
     this.shippingInfo.from = $event;
-    console.log(this.shippingInfo);
+    console.log('STEP 2: ', this.shippingInfo);
   }
   updateWeightInfo($event) {
     this.shippingInfo.weight = $event.weight;
-    console.log(this.shippingInfo);
+    console.log('STEP 3:', this.shippingInfo);
   }
   updateShippingInfo($event) {
     this.shippingInfo.shippingOption = $event.shippingOption;
-    console.log(this.shippingInfo);
+    console.log('STEP: 4:', this.shippingInfo);
   }
 
 }
