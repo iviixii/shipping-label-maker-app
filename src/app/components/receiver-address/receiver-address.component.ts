@@ -32,7 +32,6 @@ export class ReceiverAddressComponent implements OnInit {
     this.receiverOutput.emit(this.receiverForm.value);
     if (direction === 'next') {
       this.router.navigate(['wizard'],
-      
         { queryParams: { index: 1, progress: 40 } });
     }
   }
