@@ -1,6 +1,7 @@
 import { IShippingLabel } from './../../models/shipping.model';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Component, OnInit, Input } from '@angular/core';
+// import { LabelService } from './../../services/label.service';
 
 @Component({
   selector: 'app-confirm',
@@ -14,7 +15,12 @@ export class ConfirmComponent implements OnInit {
   shippingRate: number;
   shippingCost: number;
 
-  constructor(private router: Router, private activatedRoute: ActivatedRoute) { }
+  constructor(
+    private router: Router,
+    private activatedRoute: ActivatedRoute,
+    // private labelService: LabelService
+  ) {
+  }
 
   ngOnInit() {
     // TODO: API get shippingRate
@@ -29,10 +35,6 @@ export class ConfirmComponent implements OnInit {
 
 
   getCost(rate: number, weight: number, shippingOption: number): number {
-    console.log(weight);
-    console.log(shippingOption);
-    console.log((shippingOption === 1 ? 1 : 1.5));
-    console.log(rate);
     return weight * rate *
       (shippingOption === 1 ? 1 : 1.5);
   }
@@ -42,7 +44,15 @@ export class ConfirmComponent implements OnInit {
       { queryParams: { index: 3, progress: 80 } });
   }
 
-  confirm() {
-    console.log(this.shippingInfo);
+  confirm(shippingData: IShippingLabel) {
+    // !EXAMPLE CODE:
+    // this.labelService.create(shippingData).subscribe(result => {
+    //   // handle result
+    //   console.log(result);
+    // }, error => {
+    //   // handle error
+    //   console.error(error);
+    // });
+    console.log('STEP 5 SEND DATA: ', shippingData);
   }
 }
