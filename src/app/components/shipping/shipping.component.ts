@@ -23,7 +23,6 @@ export class ShippingComponent implements OnInit {
   }
 
   onFormSubmit(direction: string) {
-    console.log(this.shippingForm.value);
     this.shippingOutput.emit(this.shippingForm.value);
     if (direction === 'next') {
       this.router.navigate(['wizard'],

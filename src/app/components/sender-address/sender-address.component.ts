@@ -30,9 +30,7 @@ export class SenderAddressComponent implements OnInit {
 
   // goes to weight
   onFormSubmit(direction: string) {
-    console.log(this.senderForm.value);
     this.senderOutput.emit(this.senderForm.value);
-    console.log(direction)
     if (direction === 'next') {
       this.router.navigate(['wizard'],
         { queryParams: { index: 2, progress: 60 } });

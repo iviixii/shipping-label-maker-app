@@ -24,7 +24,6 @@ export class WeightComponent implements OnInit {
   }
 
   onFormSubmit(direction: string) {
-    console.log(this.weightForm.value);
     this.weightOutput.emit(this.weightForm.value);
     if (direction === 'next') {
       this.router.navigate(['wizard'],
